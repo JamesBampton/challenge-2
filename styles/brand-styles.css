@@ -1,0 +1,15 @@
+/* Centered text inside container*/
+.centered-logo {
+	position: absolute;
+	top: 4%;
+	left: 7%;
+	padding: 0px;
+	font-size: 50px;
+	font-family: Montserrat, sans-serif;
+	transform: translate(-50%, -40%);
+	/*background-color: rgba(0, 0, 0, 0.23);*/
+	transform: rotate(-19deg);
+	display: inline-flex;
+    z-index: 1000;
+	
+}
