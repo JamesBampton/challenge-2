@@ -53,7 +53,14 @@
 			background-color: #2cc7cdfe;
 			padding: 10px;
 			list-style-type: none;
+			height: 70px;
+
 		}
+
+		.nav li {
+			padding-top: 30px;
+		}
+
 
 		.nav li a {
 			color: white;
@@ -68,7 +75,7 @@
 			background-color: #3674b6;
 		}
 
-		.w3-animate-bottom {
+		.animate-bottom {
 			position: relative;
 			animation: animatebottom 0.4s
 		}
@@ -155,11 +162,38 @@
 
 		}
 
+		/* Container holding the image and the floating text */
+		.floating-box-test {
+			position: relative;
+			text-align: center;
+			color: white;
+		}
 
-		/* Responsive layout - makes a one column layout instead of a two-column layout */
-		@media (max-width: 100px) {
-			.flex-container {
-				flex-direction: column;
+		.myfontL {
+			color: #ffffff;
+			font-size: 40px;
+			text-align: center;
+			font-family: "Anisette Std", Arial, Helvetica, sans-serif;
+			letter-spacing: 0px;
+		}
+
+		.myfontS {
+			color: #ffffff;
+			font-size: 25px;
+			text-align: center;
+			font-family: "Anisette Std", Arial, Helvetica, sans-serif;
+			letter-spacing: 5px;
+		}
+
+		/* #myimg {
+			width: 30%
+		}
+ 		*/
+
+		/* Responsive layout - makes branded logo smaller when size of screen is reduced */
+		@media (min-width: 400px) {
+			#myimg {
+				width: 10%;
 			}
 		}
 	</style>
@@ -173,7 +207,7 @@
 			<ul class="nav">
 				<li><a href="index.html">HOME</a></li>
 				<li><a href="events.html">EVENTS</a></li>
-				<li><a href="archives.html">BMX ARCHIVES</a></li>
+				<li><a href="archives.html">ARCHIVES</a></li>
 				<li><a href="shop.html">STORE</a></li>
 			</ul>
 		</div>
@@ -183,6 +217,15 @@
 
 	<!------------------------------------------- CONTAINER (TEAM PORTALS) -------------------------------------------------------------->
 	<header>
+		<div class="w3-padding floating-box-test" id="myHeader"><br><br>
+			<img src="images/main.jpg" alt="Image" style="width:50%"><br><br>
+			<div class="centered myfontL">UK's No 1<br>
+				<p class="myfontS">old skool bmx dealer...</p>
+			</div><br><br>
+			<div class="centered-logo myfontLogo">
+				<img id="myimg" src="images/branded-logo-large2.png" style="width:50%" alt="Image"><br><br>
+			</div><br><br>
+		</div>
 
 	</header>
 
