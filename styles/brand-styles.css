@@ -12,9 +12,9 @@
 }
 .centered-logo {
 	position: absolute;
-	top: -11%;
-	left: 17%;
-	padding: 0px;
+	top: -3%;
+	left: 19%;
+	padding: 10px;
 	font-size: 50px;
 	font-family: Montserrat, sans-serif;
 	transform: translate(-50%, -40%);
