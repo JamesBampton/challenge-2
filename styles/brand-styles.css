@@ -1,4 +1,15 @@
 /* Centered text inside container*/
+
+:root { 
+    --primary-color: #2cc7cdfe ;
+    /* Hardcoded red */
+    --secondary-color: #ffffff;
+    /* Hardcoded white */
+     --ffamily: "monserat", Arial, Helvetica, sans-serif;
+    /* Hardcoded font family */
+	--backgrd-color: black;
+	/* Hardcoded background color */
+}
 .centered-logo {
 	position: absolute;
 	top: -11%;
