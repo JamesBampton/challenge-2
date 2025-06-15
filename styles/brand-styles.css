@@ -9,6 +9,17 @@
     /* Hardcoded font family */
 	--backgrd-color: black;
 	/* Hardcoded background color */
+	--about-color: white/
+
+}
+
+#about-us{
+	padding: 2em; 
+	/*border: 2px dashed #ccc;*/
+	color: var(--about-color);
+	line-height: 1.6;
+	padding-left:16%;
+	padding-right:16%
 }
 
 body {
