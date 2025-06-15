@@ -196,6 +196,36 @@ body {
 			background-color: #3674b6;
 		}
 
+		#textheader{
+			font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 0px;
+
+		}
+
+		.textline {
+			font-size:14px;
+			align-items: center;
+			padding: 0px;
+			line-height:normal;
+			color:black;
+			font-style: normal;
+			
+		}
+
+		/*Psuedo-elements for email and phone emoji*/
+		.emailemoj::before{
+			content: "✉️";
+			margin-right:5px;
+			
+		}
+
+		.phoneemoj::before {
+			content: "\1f4de";
+			margin-right:5px
+
+		}
+
 		/* #myimg {
 			width: 30%
 		}
@@ -213,6 +243,23 @@ body {
 	transform: rotate(-9deg);
 	display: inline-flex;
     z-index: 1000;
+}
+
+.centered-logo-store {
+	position: absolute;
+	top: 4%;
+	left: 20%;
+	padding: 0px;
+	font-family: var(--ffamily);
+	/*background-color: rgba(0, 0, 0, 0.23);*/
+	transform: rotate(-9deg);
+    z-index: 1000;
+}
+
+.head-container{
+	display:flex;
+	justify-content:space-around;
+
 }
 
 		/* Responsive layout - makes branded logo smaller when size of screen is reduced */
@@ -242,5 +289,28 @@ body {
 				left: 10%;
 				width:35%;
 				transform: rotate(-15deg);			
+			}
+		}
+
+			/* Responsive layout - makes branded logo smaller when size of screen is reduced */
+		@media (max-width: 390px) {
+			.centered-logo-store {
+				position: absolute;
+				top: 21%;
+				left: 9%;
+				width:50%;
+				transform: rotate(-15deg);			
+			}
+		}
+
+				/* Responsive layout - makes branded logo smaller when size of screen is reduced */
+		@media (max-width: 840px) {
+			.centered-logo-store {
+				display: flex;
+				justify-content:space-around;
+				top: 10%;
+				right:100%;
+				width:250px;
+				transform: rotate(-0deg);			
 			}
 		}
