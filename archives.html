@@ -2,6 +2,77 @@
 <!DOCTYPE html>
 <html ng-app lang="en">
 
+<style>
+	.flex-card-container {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-left: 5%;
+		margin-right: 5%;
+		grid-gap: 50px;
+		margin-top: 20px
+	}
+
+	.flex-card-items {
+		width: 200px;
+		height: 300px;
+		background-color: #ffffff;
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.2rem;
+		font-family: Arial, sans-serif;
+		border-radius: 10px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease;
+	}
+
+
+	/* Rotate cards at different angles */
+	.flex-card-items:nth-child(1) {
+		transform: rotate(-10deg);
+	}
+
+	.flex-card-items:nth-child(2) {
+		transform: rotate(5deg);
+	}
+
+	.flex-card-items:nth-child(3) {
+		transform: rotate(-15deg);
+	}
+
+	.flex-card-items:nth-child(4) {
+		transform: rotate(10deg);
+	}
+
+	.flex-card-items:nth-child(5) {
+		transform: rotate(-10deg);
+	}
+
+	.flex-card-items:nth-child(6) {
+		transform: rotate(5deg);
+	}
+
+	.flex-card-items:nth-child(7) {
+		transform: rotate(-15deg);
+	}
+
+	.flex-card-items:nth-child(8) {
+		transform: rotate(10deg);
+	}
+
+	/* Add hover effect for fun */
+	.flex-card-items:hover {
+		transform: rotate(0deg);
+		background-color: #3e8e41;
+	}
+</style>
+
+
+
 <head>
 	<title>BMX Store</title>
 	<!--This will adjust view width to device size-->
@@ -41,88 +112,17 @@
 
 	<section>
 
-		<div class="flex-container">
-			<!---- CARD 1 -->
-			<div class="flex-item">
-				<p class="deets">California, USA</p>
-				<div class="card" style="background:#2fc7cd;">
-
-					<div class="icons-style" style="padding-top: 0%">
-						<img src="images/haro-logo1.jpg"
-							style="height: 120px; width: 120px; border-radius: 90%; margin: 0%; bottom: 10px; left: 0;"
-							style="margin-bottom: 60px; padding-top:0px" alt="Avatar">
-					</div>
-				</div>
-			</div>
-
-			<!---- CARD 2 -->
-			<div class="flex-item">
-				<p class="deets">Florida, USA</p>
-				<div class="card" style="background:#2fc7cd;">
-
-					<div class="icons-style" style="padding-top: 0%">
-						<img src="images/diamondback1.jpg"
-							style="height: 120px; width: 120px; border-radius: 90%; margin: 0%; bottom: 10px; left: 0;"
-							style="margin-bottom: 60px; padding-top:0px" alt="Avatar">
-					</div>
-				</div>
-			</div>
-
-			<!---- CARD 3 -->
-			<div class="flex-item">
-				<p class="deets">Osaka, Japan</p>
-				<div class="card" style="background:#2fc7cd;">
-
-					<div class="icons-style" style="padding-top: 0%">
-						<img src="images/kuwahara2.jpg"
-							style="height: 120px; width: 120px; border-radius: 90%; margin: 0%; bottom: 10px; left: 0;"
-							style="margin-bottom: 60px; padding-top:0px" alt="Avatar">
-					</div>
-				</div>
-			</div>
-
-			<!---- CARD 4 -->
-			<div class="flex-item">
-				<p class="deets">Redline, California, USA</p>
-				<div class="card" style="background:#2fc7cd;">
-
-					<div class="icons-style" style="padding-top: 0%">
-						<img src="images/redline2.png"
-							style="height: 120px; width: 120px; border-radius: 90%; margin: 0%; bottom: 10px; left: 0;"
-							style="margin-bottom: 60px; padding-top:0px" alt="Avatar">
-					</div>
-				</div>
-			</div>
-			<!---- CARD 5 -->
-			<div class="flex-item">
-				<p class="deets">Mongoose, California, USA</p>
-				<div class="card" style="background:#2fc7cd;">
-
-					<div class="icons-style" style="padding-top: 0%">
-						<img src="images/mongoose-logo.png"
-							style="height: 120px; width: 120px; border-radius: 90%; margin: 0%; bottom: 10px; left: 0;"
-							style="margin-bottom: 60px; padding-top:0px" alt="Avatar">
-					</div>
-				</div>
-			</div>
-			<!---- CARD 6 -->
-			<div class="flex-item">
-				<p class="deets">GT, California, USA</p>
-				<div class="card" style="background:#2fc7cd;">
-
-					<div class="icons-style" style="padding-top: 0%">
-						<img src="images/gt3-logo.png"
-							style="height: 120px; width: 120px; border-radius: 90%; margin: 0%; bottom: 10px; left: 0;"
-							style="margin-bottom: 60px; padding-top:0px" alt="Avatar">
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
+		<div class="flex-card-container">
+			<div class="flex-card-items">Card 1</div>
+			<div class="flex-card-items">Card 2</div>
+			<div class="flex-card-items">Card 3</div>
+			<div class="flex-card-items">Card 4</div>
+			<div class="flex-card-items">Card 5</div>
+			<div class="flex-card-items">Card 6</div>
+			<div class="flex-card-items">Card 7</div>
+			<div class="flex-card-items">Card 8</div>
 		</div>
 
-
-		<br><br><br><br><br>
 	</section>
 
 	<footer>
