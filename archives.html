@@ -15,8 +15,8 @@
 		margin-top: 20px
 	}
 
-	.flex-card-items {
-		width: 200px;
+	.flex-card-items>img {
+		width: 400px;
 		height: 300px;
 		background-color: #ffffff;
 		color: white;
@@ -25,9 +25,16 @@
 		align-items: center;
 		font-size: 1.2rem;
 		font-family: Arial, sans-serif;
-		border-radius: 10px;
+		border-radius: 2px;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		transition: transform 0.3s ease;
+		border: 9px solid white;
+	}
+
+	.inner-img {
+
+		display: flex;
+		flex-shrink: 0;
 	}
 
 
@@ -65,9 +72,9 @@
 	}
 
 	/* Add hover effect for fun */
-	.flex-card-items:hover {
+	.flex-card-items>img:hover {
 		transform: rotate(0deg);
-		background-color: #3e8e41;
+		border-color: #69b4ca;
 	}
 </style>
 
@@ -113,17 +120,19 @@
 	<section>
 
 		<div class="flex-card-container">
-			<div class="flex-card-items">Card 1</div>
-			<div class="flex-card-items">Card 2</div>
-			<div class="flex-card-items">Card 3</div>
-			<div class="flex-card-items">Card 4</div>
-			<div class="flex-card-items">Card 5</div>
-			<div class="flex-card-items">Card 6</div>
-			<div class="flex-card-items">Card 7</div>
-			<div class="flex-card-items">Card 8</div>
+			<div class="flex-card-items"><img class="inner-img" src="images/ron.png"></div>
+			<div class="flex-card-items"><img class="inner-img" src="images/ron.png"></div>
+			<div class="flex-card-items"><img class="inner-img" src="images/ron.png"></div>
+			<div class="flex-card-items"><img class="inner-img" src="images/ron.png"></div>
+			<div class="flex-card-items"><img class="inner-img" src="images/ron.png"></div>
+			<div class="flex-card-items"><img class="inner-img" src="images/ron.png"></div>
+			<div class="flex-card-items"><img class="inner-img" src="images/ron.png"></div>
+			<div class="flex-card-items"><img class="inner-img" src="images/ron.png"></div>
 		</div>
 
 	</section>
+
+	<br><br>
 
 	<footer>
 
