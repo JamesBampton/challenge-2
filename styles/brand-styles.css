@@ -14,13 +14,13 @@
 }
 
 #about-us{
-	padding: 2em; 
-	/*border: 2px dashed #ccc;*/
-	color: var(--about-color);
-	line-height: 1.6;
-	padding-left:16%;
-	padding-right:16%
-}
+			padding: 2em; 
+			/*border: 2px dashed #ccc;*/
+			color: var(--about-color);
+			line-height: 1.6;
+			padding-left:16%;
+			padding-right:16%
+		}
 
 body {
 
@@ -56,6 +56,43 @@ body {
 			padding: 10px;
 			color: grey
 		}
+
+		.bike-box {
+			display:flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items:center;
+			/*min-height: 100vh;*/
+			background-color: var--(backgrd-color);
+		}
+
+		.bike-box-card {
+			
+			align-items:center;
+			/*min-height: 100vh;*/
+			background-color: grey;
+			padding: 5px;
+			margin: 5px;
+			border-radius: 5px
+
+		}
+
+
+		.nested-container {
+			font-family: var(--ffamily);
+			background-color: var(--secondary-color);
+			width: 270px;
+			margin: 10px;
+			text-align: center;
+			line-height: 75px;
+			font-size: 30px;
+			border-radius: 10px;
+			height: 300px;
+			padding: 10px;
+			color: grey;	
+		}
+
 
 		/* Flexbox navigation */
 		.main-nav {
@@ -144,12 +181,32 @@ body {
 			top: -35px;
 		}
 
-		.card-back {
+		   /* Image styling */
+    .bike-box-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
 
-			background :rgb(244, 244, 247);
-		}
+    /* Table styling */
+    .bike-box-card table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
 
-		.deets {
+    .bike-box-card table th, .bike-box-card table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .bike-box-card table th {
+      background-color: #f2f2f2;
+      font-weight: none;
+    }
+
+	.deets {
 
 			position: relative;
 			top: 215px;
@@ -160,7 +217,7 @@ body {
 			height: 0px;
 			font-size: 16px;
 			font-family: var(--ffamily);
-			color: rgb(206, 204, 204);
+			color: rgb(151, 147, 147);
 			font-weight: bold
 		}
 
@@ -171,7 +228,8 @@ body {
 		/* Add hover effect on icons in cards */
 		.icons-style img:hover {
 			transform: scale(1.2);
-			transition: 0ms.1s ease;
+			transition: 0.7s ease;
+
 		}
 
 		/* Container holding the brand image and the floating text */
@@ -277,6 +335,36 @@ body {
 	justify-content:space-around;
 
 }
+
+/* TABLe STYLES */
+
+   table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1px auto;
+			background-color: #3674b6;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 3px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+			color: grey;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+	.add-to-basket {
+		padding: 5px;
+		margin: 5px;
+		border-radius: 5px;
+		border: 1px solid var(--primary-color)
+	}
+
 
 		/* Responsive layout - makes branded logo smaller when size of screen is reduced */
 		@media (max-width: 390px) {
