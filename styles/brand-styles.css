@@ -61,19 +61,18 @@ body {
 			display:flex;
 			flex-wrap: wrap;
 			flex-direction: row;
-			justify-content: space-around;
-			align-items:center;
+			justify-content:space-around;
+			align-items: center;
 			/*min-height: 100vh;*/
 			background-color: var--(backgrd-color);
 		}
 
 		.bike-box-card {
-			
 			align-items:center;
 			/*min-height: 100vh;*/
 			background-color: grey;
-			padding: 5px;
-			margin: 5px;
+			padding: 8px;
+			margin-bottom: 10px;
 			border-radius: 5px
 
 		}
@@ -304,7 +303,6 @@ body {
 			width: 30%
 		}
  		*/
-
 		
 .centered-logo {
 	position: absolute;
