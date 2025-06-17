@@ -9,7 +9,9 @@
     /* Hardcoded font family */
 	--backgrd-color: black;
 	/* Hardcoded background color */
-	--about-color: white/
+	--about-color: white;
+	/* Hardcoded Gradient */
+	--gradient-back: background-image: linear-gradient(to right, #2cc7cdfe , #2cc7cdfe);
 
 }
 
@@ -98,7 +100,8 @@ body {
 			display: flex;
 			flex-direction: row;
 			justify-content: end;
-			background-color: var(--primary-color);
+			/*background-color: var(--primary-color);*/
+			background-image: linear-gradient(to left, #2cc7cdfe, #92d7f0);
 			padding: 0px;
 			height: auto;
 			z-index: 999;
@@ -368,7 +371,8 @@ body {
 		@media (max-width: 390px) {
 			.main-nav ul {
 				flex-direction: column;
-				justify-content:space-around;			
+				justify-content:space-around;
+					
 			}
 		}
 
