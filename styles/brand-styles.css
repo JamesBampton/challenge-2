@@ -1,10 +1,11 @@
 /* Centered text inside container*/
 
 :root {
-	--primary-color: #2cc7cdfe;
+	--primary-color: #44aa00ff;
 	/* Hardcoded red */
-	--secondary-color: #ffffff;
+	--secondary-color: #bcd35fff;
 	/* Hardcoded white */
+	--accent-color: #b3b3b3ff;
 	--ffamily: "monserat", Arial, Helvetica, sans-serif;
 	/* Hardcoded font family */
 	--backgrd-color: black;
@@ -45,6 +46,15 @@ body {
 
 }
 
+.flex-container1 {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background-color: var(--backgrd-color);
+	justify-content: center;
+
+}
+
 .flex-container>div {
 	font-family: var(--ffamily);
 	background-color: var(--secondary-color);
@@ -56,7 +66,21 @@ body {
 	border-radius: 10px;
 	height: 300px;
 	padding: 10px;
-	color: grey
+	color: grey;
+}
+
+.flex-container1>div {
+	font-family: var(--ffamily);
+	background-color: var(--secondary-color);
+	width: 490px;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+	border-radius: 10px;
+	height: 300px;
+	padding: 10px;
+	color: grey;
 }
 
 .flex-container-foot {
